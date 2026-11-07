@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rizky Darmawan — Digital Marketing Strategist</title>
+<meta name="description" content="Rizky Darmawan, digital marketing strategist sejak 2012: strategi kampanye, iklan Meta & Google, CRM Odoo, dan otomasi n8n untuk bisnis B2B, B2C, dan e-commerce.">
+<meta property="og:title" content="Rizky Darmawan — Digital Marketing Strategist">
+<meta property="og:description" content="Strategi digital marketing yang terhubung dengan proses penjualan: iklan, CRM, dan otomasi.">
+<meta property="og:image" content="assets/rizky.webp">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="theme-color" content="#0f2e1c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314532d'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia' font-weight='700' font-size='28' fill='%23ffffff'%3ERD%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/rizky.webp">
+<style>
+:root{
+  --bg:#fbfaf7; --surface:#ffffff; --surface-2:#f1f3ee; --ink:#0f1a12; --ink-soft:#4b5a4f; --muted:#6b776e;
+  --line:#e3e6df; --brand:#14532d; --brand-ink:#ffffff; --accent:#166534; --lime:#bef264;
+  --band:#0f2e1c; --band-2:#163d26; --band-ink:#e8f5e9; --band-soft:#a7c4ae;
+  --shadow:0 1px 2px rgba(15,26,18,.04),0 10px 30px rgba(15,26,18,.06);
+  --max:1160px; --r:16px;
+  --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0a110c; --surface:#111a14; --surface-2:#16211a; --ink:#ecf3ea; --ink-soft:#a9b8ad; --muted:#8a998e;
+  --line:#223027; --brand:#86efac; --brand-ink:#05200f; --accent:#86efac;
+  --band:#0d1f14; --band-2:#14301f; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.25);
+}}
+:root[data-theme="dark"]{
+  --bg:#0a110c; --surface:#111a14; --surface-2:#16211a; --ink:#ecf3ea; --ink-soft:#a9b8ad; --muted:#8a998e;
+  --line:#223027; --brand:#86efac; --brand-ink:#05200f; --accent:#86efac;
+  --band:#0d1f14; --band-2:#14301f; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.65 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3{font-family:var(--serif);font-weight:500;letter-spacing:-.015em;line-height:1.12}
+h3{font-family:var(--sans);font-weight:600;letter-spacing:-.01em;line-height:1.3}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+@media (min-width:768px){.wrap{padding:0 32px}}
+.skip{position:absolute;left:-999px;top:8px;background:var(--brand);color:var(--brand-ink);padding:8px 14px;border-radius:8px;z-index:99}
+.skip:focus{left:8px}
+.eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--ink-soft)}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+.nav.scrolled{border-bottom-color:var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:12px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:600;font-size:16px}
+.logo b{width:34px;height:34px;border-radius:9px;background:#14532d;color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:15px;font-weight:600}
+.logo small{display:block;font-size:12px;font-weight:500;color:var(--muted);line-height:1.1}
+.nav-links{display:none;gap:2px}
+.nav-links a{padding:8px 12px;border-radius:8px;font-size:14.5px;font-weight:500;color:var(--ink-soft);transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--ink);background:var(--surface-2)}
+@media (min-width:960px){.nav-links{display:flex}}
+.tools-nav{display:flex;align-items:center;gap:6px}
+.icon-btn{min-width:44px;height:44px;padding:0 10px;border-radius:10px;border:1px solid var(--line);display:grid;place-items:center;font-size:13px;font-weight:600;transition:background .2s}
+.icon-btn:hover{background:var(--surface-2)}
+.icon-btn svg{width:18px;height:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:48px;padding:0 22px;border-radius:10px;font-weight:600;font-size:15px;transition:background .2s,transform .2s,border-color .2s;white-space:nowrap}
+.btn svg{width:18px;height:18px}
+.btn-primary{background:#14532d;color:#fff}
+.btn-primary:hover{background:#166534;transform:translateY(-1px)}
+.btn-outline{border:1px solid var(--line);background:var(--surface)}
+.btn-outline:hover{border-color:var(--ink-soft)}
+.btn-sm{height:44px;padding:0 16px;font-size:14px}
+.hide-sm{display:none}@media (min-width:600px){.hide-sm{display:inline-flex}}
+
+/* HERO */
+.hero{padding-top:48px}
+.hero-grid{display:grid;gap:40px;align-items:center}
+@media (min-width:900px){.hero-grid{grid-template-columns:1.25fr .85fr;gap:56px}.hero{padding-top:72px}}
+.hero h1{font-size:clamp(36px,5.4vw,64px);margin-top:16px}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .lead{font-size:clamp(17px,1.5vw,19px);color:var(--ink-soft);margin-top:20px;max-width:54ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.trust{display:flex;align-items:center;gap:10px;margin-top:26px;font-size:14px;color:var(--muted)}
+.dot{width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.55);animation:pulse 2.2s infinite;flex:none}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+.portrait{position:relative;max-width:420px;width:100%;justify-self:center}
+.portrait .frame{border-radius:20px;overflow:hidden;background:#f4d0a0;aspect-ratio:4/4.6;box-shadow:var(--shadow)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 18%}
+.badge-card{position:absolute;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px;box-shadow:var(--shadow);font-size:13px;line-height:1.35}
+.badge-card strong{display:block;font-size:14px}
+.bc-1{left:12px;bottom:20px}
+@media (max-width:520px){.bc-1{left:8px}.bc-2{right:8px}}
+
+.stats{display:grid;grid-template-columns:1fr 1fr;margin-top:56px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+@media (min-width:768px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{padding:22px 16px}
+.stat + .stat{border-left:1px solid var(--line)}
+@media (max-width:767px){.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}}
+.stat .num{font-family:var(--serif);font-size:clamp(26px,3vw,34px);font-weight:500;color:var(--accent);line-height:1.1}
+.stat .lbl{font-size:13.5px;color:var(--muted);margin-top:4px}
+
+/* SECTIONS */
+section{padding:96px 0 0;scroll-margin-top:68px}
+.sec-head{max-width:720px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(30px,4vw,46px);margin-top:12px}
+.sec-head p{color:var(--ink-soft);margin-top:14px;font-size:17px}
+
+/* SYSTEM (dark band) */
+.system{margin-top:96px;background:var(--band);color:var(--band-ink);padding:88px 0;position:relative;overflow:hidden}
+.system .eyebrow{color:var(--lime)}
+.system .sec-head p{color:var(--band-soft)}
+.system h2{color:#fff}
+.flow{display:grid;gap:0;grid-template-columns:1fr;position:relative}
+@media (min-width:900px){.flow{grid-template-columns:repeat(5,1fr)}}
+.node{position:relative;padding:22px 20px;background:var(--band-2);border:1px solid rgba(190,242,100,.14);border-radius:14px}
+.node .n-ic{width:44px;height:44px;border-radius:10px;background:rgba(190,242,100,.12);color:var(--lime);display:grid;place-items:center;margin-bottom:14px}
+.node .n-ic svg{width:22px;height:22px}
+.node h3{font-size:16px;color:#fff}
+.node p{font-size:14px;color:var(--band-soft);margin-top:6px;line-height:1.5}
+.node.end{background:var(--lime);border-color:var(--lime)}
+.node.end h3,.node.end p{color:#1a2e05}
+.node.end .n-ic{background:rgba(26,46,5,.1);color:#1a2e05}
+.link{position:relative;display:grid;place-items:center;height:34px}
+.link::before{content:"";position:absolute;width:2px;height:100%;background:repeating-linear-gradient(to bottom,rgba(190,242,100,.5) 0 5px,transparent 5px 10px)}
+.link i{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px var(--lime);animation:flowY 1.8s linear infinite}
+@keyframes flowY{from{top:0}to{top:calc(100% - 8px)}}
+@media (min-width:900px){
+  .flow{grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr 28px 1fr;align-items:stretch}
+  .link{height:auto}
+  .link::before{width:100%;height:2px;background:repeating-linear-gradient(to right,rgba(190,242,100,.5) 0 5px,transparent 5px 10px)}
+  .link i{top:calc(50% - 4px)!important;animation:flowX 1.8s linear infinite}
+  @keyframes flowX{from{left:0}to{left:calc(100% - 8px)}}
+}
+.system-note{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:36px;color:var(--band-soft);font-size:15px}
+.system-note span{display:flex;align-items:center;gap:8px}
+.system-note svg{width:18px;height:18px;color:var(--lime);flex:none}
+
+/* SERVICES */
+.svc-grid{display:grid;gap:16px;grid-template-columns:1fr}
+@media (min-width:640px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media (min-width:1000px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px;transition:border-color .25s,transform .25s,box-shadow .25s}
+.card:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line));transform:translateY(-3px);box-shadow:var(--shadow)}
+.card .c-ic{width:46px;height:46px;border-radius:11px;background:var(--surface-2);color:var(--accent);display:grid;place-items:center;margin-bottom:20px}
+.card .c-ic svg{width:23px;height:23px}
+.card h3{font-size:18.5px}
+.card p{color:var(--ink-soft);font-size:15px;margin-top:8px}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.card .tags span{font-size:12.5px;font-weight:500;color:var(--muted);background:var(--surface-2);padding:3px 10px;border-radius:6px}
+
+/* INDUSTRIES */
+.ind-grid{display:grid;gap:16px;grid-template-columns:1fr}
+@media (min-width:900px){.ind-grid{grid-template-columns:repeat(3,1fr)}}
+.ind{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:30px;display:flex;flex-direction:column}
+.ind .kicker{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted);padding-bottom:16px;border-bottom:1px solid var(--line);margin-bottom:20px}
+.ind .kicker b{font-family:var(--serif);font-weight:500;font-size:22px;color:var(--accent)}
+.ind h3{font-family:var(--serif);font-weight:500;font-size:24px;letter-spacing:-.01em}
+.ind .type{font-size:13px;font-weight:600;color:var(--accent);margin-top:4px}
+.ind p{color:var(--ink-soft);font-size:15px;margin-top:12px}
+.ind ul{list-style:none;margin-top:16px;display:grid;gap:8px;font-size:14.5px}
+.ind li{display:flex;gap:10px;align-items:flex-start}
+.ind li svg{width:18px;height:18px;color:var(--accent);flex:none;margin-top:3px}
+
+/* PROCESS */
+.steps{display:grid;grid-template-columns:1fr;border-top:1px solid var(--line);counter-reset:s}
+@media (min-width:768px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{padding:28px 24px 8px 0;counter-increment:s}
+@media (min-width:768px){.step + .step{padding-left:24px;border-left:1px solid var(--line)}}
+@media (max-width:767px){.step + .step{border-top:1px solid var(--line)}}
+.step::before{content:"0" counter(s);font-family:var(--serif);font-size:15px;color:var(--accent);display:block;margin-bottom:12px}
+.step h3{font-size:18px}
+.step p{color:var(--ink-soft);font-size:15px;margin-top:6px}
+
+/* CREATIVE (secondary) */
+.creative{margin-top:96px;background:var(--surface-2);border-radius:20px;padding:32px 24px;display:grid;gap:24px;align-items:center}
+@media (min-width:900px){.creative{grid-template-columns:.9fr 1.6fr;padding:40px}}
+.creative h2{font-size:clamp(24px,2.6vw,30px);margin-top:10px}
+.creative p.muted{margin-top:10px;font-size:15px}
+.cr-list{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:640px){.cr-list{grid-template-columns:repeat(3,1fr)}}
+.cr{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;gap:14px;align-items:flex-start}
+.cr svg{width:22px;height:22px;color:var(--accent);flex:none;margin-top:2px}
+.cr strong{display:block;font-size:15px}
+.cr span{display:block;font-size:13.5px;color:var(--muted);margin-top:2px;line-height:1.45}
+
+/* ABOUT */
+.about{display:grid;gap:40px}
+@media (min-width:900px){.about{grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}}
+.about h2{font-size:clamp(30px,4vw,44px);margin-top:12px}
+.about .body p{color:var(--ink-soft);font-size:17px;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+@media (max-width:599px){.about .body p{font-size:16px}}
+.about .body p + p{margin-top:16px}
+.quote{font-family:var(--serif);font-size:clamp(20px,2.2vw,24px);line-height:1.4;border-left:3px solid var(--accent);padding-left:20px;margin:28px 0 0;color:var(--ink)}
+.stack{margin-top:32px}
+.stack h3{font-size:14px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.stack-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.stack-list span{font-size:14px;font-weight:500;padding:7px 13px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+
+/* CONTACT */
+.contact{margin-top:96px;background:#14532d;color:#fff;border-radius:24px;padding:48px 24px;display:grid;gap:32px;position:relative;overflow:hidden}
+@media (min-width:900px){.contact{grid-template-columns:1.3fr 1fr;padding:64px;align-items:center}}
+.contact::after{content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(190,242,100,.08)}
+.contact .eyebrow{color:var(--lime)}
+.contact h2{font-size:clamp(32px,4.6vw,52px);margin-top:12px;color:#fff}
+.contact p{color:#c7e3cf;margin-top:14px;font-size:17px;max-width:46ch}
+.c-actions{display:grid;gap:10px;position:relative;z-index:1}
+.c-actions .btn{width:100%;justify-content:flex-start;height:56px}
+.btn-lime{background:var(--lime);color:#1a2e05}
+.btn-lime:hover{background:#d9f99d}
+.btn-glass{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.18)}
+.btn-glass:hover{background:rgba(255,255,255,.14)}
+.c-actions small{color:#a7c4ae;font-size:13px;text-align:center;margin-top:4px}
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:32px 0 40px;color:var(--muted);font-size:14px}
+footer nav{display:flex;gap:16px}
+footer a:hover{color:var(--ink)}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+.no-js .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#main" data-i18n="skip">Langsung ke konten</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo" aria-label="Rizky Darmawan, beranda"><b>RD</b><span>Rizky Darmawan<small>Digital Marketing Strategist</small></span></a>
+    <nav class="nav-links" aria-label="Menu utama">
+      <a href="#about" data-i18n="nav.about">Tentang</a>
+      <a href="#system" data-i18n="nav.system">Cara kerja</a>
+      <a href="#services" data-i18n="nav.services">Layanan</a>
+      <a href="#industries" data-i18n="nav.industries">Pengalaman</a>
+    </nav>
+    <div class="tools-nav">
+      <button class="icon-btn" id="langBtn" aria-label="Switch language to English">EN</button>
+      <button class="icon-btn" id="themeBtn" aria-label="Ganti mode gelap/terang"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a href="#contact" class="btn btn-primary btn-sm hide-sm" data-i18n="nav.cta">Jadwalkan konsultasi</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<div id="top" class="wrap hero">
+  <div class="hero-grid">
+    <div>
+      <p class="eyebrow" data-i18n="hero.eyebrow">Digital Marketing Strategist · Sejak 2012</p>
+      <h1 data-i18n-html="hero.title">Strategi digital marketing yang <em>terhubung</em> dengan proses penjualan Anda.</h1>
+      <p class="lead" data-i18n="hero.lead">Saya membantu bisnis merancang kampanye, mengelola iklan Meta dan Google, serta membangun CRM dan otomasi — agar setiap prospek tercatat rapi, ditindaklanjuti tepat waktu, dan hasilnya dapat diukur.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary"><span data-i18n="hero.cta1">Jadwalkan konsultasi</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#system" class="btn btn-outline" data-i18n="hero.cta2">Lihat cara kerja</a>
+      </div>
+      <p class="trust"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.avail">Menerima proyek baru · 30+ jam/minggu · WIB (GMT+7)</span></p>
+    </div>
+    <div class="portrait">
+      <div class="frame"><img src="assets/rizky.webp" width="1080" height="1080" alt="Foto Rizky Darmawan tersenyum, berkacamata, mengenakan kemeja polo hijau zaitun" data-i18n-alt="hero.alt" fetchpriority="high"></div>
+      <div class="badge-card bc-1"><strong data-i18n="b.sys">Iklan → CRM → Sales</strong><span class="muted" data-i18n="b.sysSub">Dalam satu sistem terukur</span></div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="num">2012</div><div class="lbl" data-i18n="st1">Berpengalaman di online marketing sejak</div></div>
+    <div class="stat"><div class="num">3</div><div class="lbl" data-i18n="st2">Model bisnis: B2C, B2B, dan marketplace</div></div>
+    <div class="stat"><div class="num">n8n · Odoo</div><div class="lbl" data-i18n="st3">Otomasi dan CRM</div></div>
+    <div class="stat"><div class="num">ID · EN</div><div class="lbl" data-i18n="st4">Klien lokal dan internasional</div></div>
+  </div>
+</div>
+
+<section id="about" class="wrap">
+  <div class="about">
+    <div class="rv">
+      <p class="eyebrow" data-i18n="a.eyebrow">Tentang</p>
+      <h2 data-i18n="a.title">Halo, saya Rizky.</h2>
+      <p class="quote" data-i18n="a.quote">“Kampanye yang baik tidak berhenti di klik. Ia membutuhkan sistem penjualan yang siap menindaklanjutinya.”</p>
+    </div>
+    <div class="body rv">
+      <p data-i18n="a.p1">Saya berkecimpung di online marketing sejak 2012. Dalam perjalanan itu, saya melihat banyak bisnis sudah berinvestasi di iklan, namun hasilnya kurang optimal karena prospek tidak tercatat dan ditindaklanjuti dengan baik.</p>
+      <p data-i18n="a.p2">Karena itu, saya memadukan strategi, iklan berbayar, CRM, dan otomasi dalam satu alur kerja. Saya bekerja dengan bisnis lokal maupun klien internasional, dan siap menyesuaikan jadwal meeting dengan zona waktu Anda.</p>
+      <div class="stack">
+        <h3 data-i18n="a.stack">Tools yang saya gunakan</h3>
+        <div class="stack-list">
+          <span>Meta Ads Manager</span><span>Google Ads</span><span>Odoo CRM</span><span>n8n</span><span>Google Sheets</span><span>Telegram API</span><span>Shopee</span><span>TikTok Shop</span><span>Adobe Illustrator</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="system" class="system">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow" data-i18n="sys.eyebrow">Cara kerja</p>
+      <h2 data-i18n="sys.title">Dari iklan hingga tim sales, dalam satu alur yang terukur</h2>
+      <p data-i18n="sys.sub">Kampanye yang efektif tidak berhenti di klik. Saya menyusun alurnya secara utuh — mulai dari iklan, halaman penawaran, hingga prospek yang siap ditindaklanjuti tim sales Anda.</p>
+    </div>
+    <div class="flow" role="list">
+      <div class="node rv" role="listitem">
+        <div class="n-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8z"/></svg></div>
+        <h3 data-i18n="f1.t">Iklan Meta &amp; Google</h3><p data-i18n="f1.d">Riset audiens, materi iklan, dan pengaturan kampanye.</p>
+      </div>
+      <div class="link" aria-hidden="true"><i></i></div>
+      <div class="node rv" role="listitem">
+        <div class="n-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14h8"/></svg></div>
+        <h3 data-i18n="f2.t">Landing page &amp; formulir</h3><p data-i18n="f2.d">Copy dan funnel yang mengarahkan pengunjung menjadi prospek.</p>
+      </div>
+      <div class="link" aria-hidden="true"><i style="animation-delay:.3s"></i></div>
+      <div class="node rv" role="listitem">
+        <div class="n-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7.5l3 8.5M16 7.5l-3 8.5M8.5 6h7"/></svg></div>
+        <h3 data-i18n="f3.t">Otomasi n8n</h3><p data-i18n="f3.d">Webhook, Google Sheets, dan notifikasi Telegram.</p>
+      </div>
+      <div class="link" aria-hidden="true"><i style="animation-delay:.6s"></i></div>
+      <div class="node rv" role="listitem">
+        <div class="n-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 12h10M4 19h6"/><path d="M17 15l2 2 3-4"/></svg></div>
+        <h3>Odoo CRM</h3><p data-i18n="f4.d">Pipeline, lead scoring, dan jadwal follow-up.</p>
+      </div>
+      <div class="link" aria-hidden="true"><i style="animation-delay:.9s"></i></div>
+      <div class="node end rv" role="listitem">
+        <div class="n-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+        <h3 data-i18n="f5.t">Tim sales Anda</h3><p data-i18n="f5.d">Prospek terbagi rapi dan terpantau hingga closing.</p>
+      </div>
+    </div>
+    <div class="system-note rv">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="n1">Sumber setiap prospek dapat dilacak</span></span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="n2">Follow-up lebih cepat dan konsisten</span></span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="n3">Keputusan budget berbasis data</span></span>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="wrap">
+  <div class="sec-head rv">
+    <p class="eyebrow" data-i18n="svc.eyebrow">Layanan</p>
+    <h2 data-i18n="svc.title">Layanan untuk pertumbuhan bisnis Anda</h2>
+    <p data-i18n="svc.sub">Tersedia per layanan, atau sebagai satu paket terintegrasi dari strategi hingga eksekusi.</p>
+  </div>
+  <div class="svc-grid">
+    <article class="card rv">
+      <div class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
+      <h3 data-i18n="s1.t">Strategi &amp; perencanaan kampanye</h3>
+      <p data-i18n="s1.d">Dari riset audiens hingga rencana konten dan iklan yang siap dijalankan.</p>
+      <div class="tags"><span>Audience research</span><span>Content plan</span><span>Media plan</span></div>
+    </article>
+    <article class="card rv">
+      <div class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-6"/></svg></div>
+      <h3 data-i18n="s2.t">Lead generation &amp; iklan berbayar</h3>
+      <p data-i18n="s2.d">Pengaturan iklan Meta dan Google, desain funnel, dan copy landing page.</p>
+      <div class="tags"><span>Meta Ads</span><span>Google Ads</span><span>Funnel</span></div>
+    </article>
+    <article class="card rv">
+      <div class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="18" rx="1.5"/><rect x="14" y="3" width="7" height="11" rx="1.5"/></svg></div>
+      <h3 data-i18n="s3.t">Setup CRM &amp; manajemen prospek</h3>
+      <p data-i18n="s3.d">Pipeline Odoo, tim sales, lead scoring, dan alur follow-up.</p>
+      <div class="tags"><span>Odoo</span><span>Pipeline</span><span>Lead scoring</span></div>
+    </article>
+    <article class="card rv">
+      <div class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg></div>
+      <h3 data-i18n="s4.t">Otomasi marketing</h3>
+      <p data-i18n="s4.d">Workflow n8n yang meneruskan prospek dari iklan ke CRM dan tim sales secara otomatis.</p>
+      <div class="tags"><span>n8n</span><span>Webhooks</span><span>Telegram bot</span></div>
+    </article>
+    <article class="card rv">
+      <div class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg></div>
+      <h3 data-i18n="s5.t">Optimasi e-commerce</h3>
+      <p data-i18n="s5.d">Listing, etalase, dan deskripsi produk di Shopee dan TikTok Shop.</p>
+      <div class="tags"><span>Shopee</span><span>TikTok Shop</span><span>Listing</span></div>
+    </article>
+    <article class="card rv">
+      <div class="c-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+      <h3 data-i18n="s6.t">SEO &amp; link building</h3>
+      <p data-i18n="s6.d">SEO on-page dan backlink berkualitas untuk website dan blog.</p>
+      <div class="tags"><span>On-page SEO</span><span>Backlink</span><span>Konten</span></div>
+    </article>
+  </div>
+
+  <div class="creative rv" aria-labelledby="cr-title">
+    <div>
+      <p class="eyebrow" data-i18n="cr.eyebrow">Layanan pendukung</p>
+      <h2 id="cr-title" data-i18n="cr.title">Dukungan kreatif</h2>
+      <p class="muted" data-i18n="cr.sub">Kebutuhan materi kreatif untuk kampanye dapat saya tangani langsung, tanpa perlu vendor terpisah.</p>
+    </div>
+    <div class="cr-list">
+      <div class="cr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.6 7.6"/><circle cx="11" cy="11" r="2"/></svg><div><strong data-i18n="cr1.t">Desain grafis</strong><span data-i18n="cr1.d">Materi iklan, konten media sosial, dan banner (Adobe Illustrator)</span></div></div>
+      <div class="cr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="M17 10l5-3v10l-5-3z"/></svg><div><strong data-i18n="cr2.t">Edit video</strong><span data-i18n="cr2.d">Video pendek untuk Reels, TikTok, dan iklan</span></div></div>
+      <div class="cr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><div><strong>Copywriting</strong><span data-i18n="cr3.d">Copy iklan, landing page, dan deskripsi produk</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="industries" class="wrap">
+  <div class="sec-head rv">
+    <p class="eyebrow" data-i18n="ind.eyebrow">Pengalaman</p>
+    <h2 data-i18n="ind.title">Pengalaman di tiga model bisnis yang berbeda</h2>
+    <p data-i18n="ind.sub">Saya menangani ketiganya secara langsung, sehingga strategi yang saya susun berangkat dari praktik di lapangan.</p>
+  </div>
+  <div class="ind-grid">
+    <article class="ind rv">
+      <div class="kicker"><span data-i18n="i1.k">Peran saat ini</span><b>01</b></div>
+      <h3 data-i18n="i1.t">Travel Haji &amp; Umrah</h3>
+      <p class="type" data-i18n="i1.type">B2C bernilai tinggi</p>
+      <p data-i18n="i1.d">Memimpin digital marketing dan operasional CRM di perusahaan travel Haji &amp; Umrah.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="i1.l1">Kampanye lead generation untuk paket bernilai tinggi</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="i1.l2">Pipeline CRM dan koordinasi tim sales</span></li>
+      </ul>
+    </article>
+    <article class="ind rv">
+      <div class="kicker"><span data-i18n="i2.k">Konsultan</span><b>02</b></div>
+      <h3 data-i18n="i2.t">Outsourcing korporat</h3>
+      <p class="type" data-i18n="i2.type">B2B korporat</p>
+      <p data-i18n="i2.d">Konsultan lead generation B2B untuk perusahaan penyedia jasa security, tenaga kerja, dan cleaning service.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="i2.l1">Menjangkau pengambil keputusan di perusahaan</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="i2.l2">Nurturing prospek dengan siklus penjualan panjang</span></li>
+      </ul>
+    </article>
+    <article class="ind rv">
+      <div class="kicker"><span data-i18n="i3.k">Brand sendiri</span><b>03</b></div>
+      <h3 data-i18n="i3.t">Brand e-commerce</h3>
+      <p class="type" data-i18n="i3.type">Retail marketplace</p>
+      <p data-i18n="i3.d">Mengelola brand e-commerce sendiri di Shopee dan TikTok Shop.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="i3.l1">Listing, etalase, dan deskripsi produk</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="i3.l2">Konten video pendek dan iklan marketplace</span></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="process" class="wrap">
+  <div class="sec-head rv">
+    <p class="eyebrow" data-i18n="p.eyebrow">Proses</p>
+    <h2 data-i18n="p.title">Alur kerja yang jelas dan transparan</h2>
+  </div>
+  <div class="steps rv">
+    <div class="step"><h3>Audit</h3><p data-i18n="p1.d">Meninjau iklan, funnel, dan penanganan prospek yang berjalan saat ini.</p></div>
+    <div class="step"><h3 data-i18n="p2.t">Strategi</h3><p data-i18n="p2.d">Rencana konkret: audiens, penawaran, kanal, budget, dan KPI.</p></div>
+    <div class="step"><h3 data-i18n="p3.t">Eksekusi</h3><p data-i18n="p3.d">Menjalankan kampanye, landing page, pipeline CRM, dan otomasi.</p></div>
+    <div class="step"><h3 data-i18n="p4.t">Optimasi</h3><p data-i18n="p4.d">Laporan rutin dan perbaikan berkelanjutan berdasarkan data.</p></div>
+  </div>
+</section>
+
+
+<div class="wrap">
+  <section id="contact" class="contact rv">
+    <div style="position:relative;z-index:1">
+      <p class="eyebrow" data-i18n="c.eyebrow">Mari berdiskusi</p>
+      <h2 data-i18n="c.title">Mari diskusikan target pemasaran Anda.</h2>
+      <p data-i18n="c.sub">Ceritakan kondisi bisnis dan tujuan Anda. Saya akan membalas dalam 1×24 jam dengan gambaran awal dan langkah selanjutnya.</p>
+    </div>
+    <div class="c-actions">
+      <a class="btn btn-lime" href="mailto:rizkydarmawannn@gmail.com?subject=Permintaan%20konsultasi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>rizkydarmawannn@gmail.com</a>
+      <a class="btn btn-glass" href="https://wa.me/6282282225702?text=Halo%20Rizky%2C%20saya%20menghubungi%20Anda%20dari%20website%20portofolio%20Anda.%20Saya%20ingin%20berdiskusi%20tentang%20kebutuhan%20digital%20marketing%20bisnis%20saya." data-i18n-href="c.waLink" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.6 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.4-5.1-4.6-.2-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.5z"/></svg><span data-i18n="c.wa">Chat via WhatsApp</span></a>
+      <a class="btn btn-glass" href="https://www.upwork.com/freelancers/~013b0290031acae6d4" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.6 13.3c-1 0-2-.4-2.8-1.1l.2-1.1v-.1c.2-1.2.9-3.2 2.6-3.2a2.7 2.7 0 0 1 0 5.5zm0-8.2c-2.6 0-4.6 1.7-5.4 4.4-1.2-1.8-2.2-4-2.7-5.9H7.7v7.1a2.4 2.4 0 0 1-4.8 0V3.6H.1v7.1a5.2 5.2 0 0 0 10.4 0V9.5c.5 1 1.1 2.1 1.8 3l-1.6 7.4h2.8l1.2-5.4c1 .7 2.2 1.1 3.7 1.1a5.3 5.3 0 0 0 0-10.5z"/></svg><span data-i18n="c.up">Rekrut saya di Upwork</span></a>
+      <small data-i18n="c.note">Pembayaran aman via Upwork, PayPal, atau transfer bank</small>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer class="wrap">
+  <span>© <span id="yr">2026</span> Rizky Darmawan</span>
+  <nav aria-label="Media sosial">
+    <a href="https://www.upwork.com/freelancers/~013b0290031acae6d4" target="_blank" rel="noopener">Upwork</a>
+    <a href="https://www.linkedin.com/in/trierizkyd/" target="_blank" rel="noopener">LinkedIn</a>
+  </nav>
+</footer>
+
+<script>
+document.body.classList.remove('no-js');
+// Indonesian lives in the HTML (primary, for SEO and no-JS); English is the alternate.
+const EN={
+ "skip":"Skip to content","nav.system":"How it works","nav.services":"Services","nav.industries":"Experience","nav.about":"About","nav.cta":"Book a consultation",
+ "hero.eyebrow":"Digital Marketing Strategist · Since 2012",
+ "hero.title":"Digital marketing strategy, <em>connected</em> to your sales process.",
+ "hero.lead":"I help businesses plan campaigns, manage Meta and Google ads, and build CRM and automation — so every prospect is properly recorded, followed up on time, and results can be measured.",
+ "hero.cta1":"Book a consultation","hero.cta2":"See how I work","hero.avail":"Open to new projects · 30+ hrs/week · GMT+7",
+ "hero.alt":"Portrait of Rizky Darmawan smiling, wearing glasses and an olive-green polo shirt",
+ "b.sys":"Ads → CRM → Sales","b.sysSub":"In one measurable system",
+ "st1":"In online marketing since","st2":"Business models: B2C, B2B and marketplace","st3":"Automation and CRM","st4":"Local and international clients",
+ "sys.eyebrow":"How it works","sys.title":"From ads to your sales team, in one measurable flow","sys.sub":"Effective campaigns don't stop at the click. I design the whole flow — from the ad and the offer page to a prospect your sales team is ready to follow up.",
+ "f1.t":"Meta & Google Ads","f1.d":"Audience research, ad creatives and campaign setup.",
+ "f2.t":"Landing page & forms","f2.d":"Copy and funnel that guide visitors to become prospects.",
+ "f3.t":"n8n automation","f3.d":"Webhooks, Google Sheets and Telegram notifications.",
+ "f4.d":"Pipelines, lead scoring and follow-up schedules.",
+ "f5.t":"Your sales team","f5.d":"Prospects neatly assigned and tracked through to closing.",
+ "n1":"Every prospect's source is traceable","n2":"Faster, more consistent follow-up","n3":"Data-driven budget decisions",
+ "svc.eyebrow":"Services","svc.title":"Services to help your business grow","svc.sub":"Available individually, or as one integrated package from strategy to execution.",
+ "s1.t":"Strategy & campaign planning","s1.d":"From audience research to a content and ad plan that's ready to run.",
+ "s2.t":"Lead generation & paid ads","s2.d":"Meta and Google ads setup, funnel design and landing page copy.",
+ "s3.t":"CRM setup & lead management","s3.d":"Odoo pipelines, sales teams, lead scoring and follow-up flows.",
+ "s4.t":"Marketing automation","s4.d":"n8n workflows that pass prospects from ads to your CRM and sales team automatically.",
+ "s5.t":"E-commerce optimization","s5.d":"Listings, storefronts and product descriptions on Shopee and TikTok Shop.",
+ "s6.t":"SEO & link building","s6.d":"On-page SEO and quality backlinks for websites and blogs.",
+ "cr.eyebrow":"Supporting services","cr.title":"Creative support","cr.sub":"I can handle the creative assets your campaign needs directly, without a separate vendor.",
+ "cr1.t":"Graphic design","cr1.d":"Ad creatives, social media content and banners (Adobe Illustrator)",
+ "cr2.t":"Video editing","cr2.d":"Short-form video for Reels, TikTok and ads",
+ "cr3.d":"Ad copy, landing pages and product descriptions",
+ "ind.eyebrow":"Experience","ind.title":"Experience across three different business models","ind.sub":"I work hands-on in all three, so the strategies I build come from practice in the field.",
+ "i1.k":"Current role","i1.t":"Hajj & Umrah travel","i1.type":"High-ticket B2C","i1.d":"Leading digital marketing and CRM operations at a Hajj & Umrah travel company.","i1.l1":"Lead generation campaigns for high-value packages","i1.l2":"CRM pipeline and sales team coordination",
+ "i2.k":"Consulting","i2.t":"Corporate outsourcing","i2.type":"B2B corporate","i2.d":"B2B lead generation consultant for a firm providing security, manpower and cleaning services.","i2.l1":"Reaching decision-makers at companies","i2.l2":"Nurturing prospects through long sales cycles",
+ "i3.k":"Own brands","i3.t":"E-commerce brands","i3.type":"Marketplace retail","i3.d":"Managing my own e-commerce brands on Shopee and TikTok Shop.","i3.l1":"Listings, storefronts and product descriptions","i3.l2":"Short-form video content and marketplace ads",
+ "p.eyebrow":"Process","p.title":"A clear, transparent way of working",
+ "p1.d":"Review your current ads, funnel and how prospects are handled.",
+ "p2.t":"Strategy","p2.d":"A concrete plan: audience, offer, channels, budget and KPIs.",
+ "p3.t":"Execution","p3.d":"Launch campaigns, landing pages, CRM pipeline and automations.",
+ "p4.t":"Optimization","p4.d":"Regular reporting and continuous improvement based on data.",
+ "a.eyebrow":"About","a.title":"Hi, I'm Rizky.","a.quote":"“A good campaign doesn't stop at the click. It needs a sales system ready to follow it up.”",
+ "a.p1":"I've been working in online marketing since 2012. Along the way, I've seen many businesses invest in ads but get less than they could, because prospects weren't properly recorded and followed up.",
+ "a.p2":"That's why my approach brings strategy, paid ads, CRM and automation together in one workflow. I work with local businesses and international clients, and I'm happy to schedule meetings around your timezone.",
+ "a.stack":"Tools I work with",
+ "c.eyebrow":"Let's talk","c.title":"Let's discuss your marketing goals.","c.sub":"Tell me about your business and what you want to achieve. I'll reply within 24 hours with initial thoughts and next steps.",
+ "c.wa":"Chat on WhatsApp","c.waLink":"https://wa.me/6282282225702?text=Hi%20Rizky%2C%20I%27m%20reaching%20out%20from%20your%20portfolio%20website.%20I%27d%20like%20to%20discuss%20my%20business%27s%20digital%20marketing%20needs.","c.up":"Hire me on Upwork","c.note":"Secure payment via Upwork, PayPal or bank transfer"
+};
+const ID={};
+document.querySelectorAll('[data-i18n]').forEach(el=>ID[el.dataset.i18n]=el.textContent);
+document.querySelectorAll('[data-i18n-html]').forEach(el=>ID[el.dataset.i18nHtml]=el.innerHTML);
+document.querySelectorAll('[data-i18n-alt]').forEach(el=>ID[el.dataset.i18nAlt]=el.alt);
+document.querySelectorAll('[data-i18n-href]').forEach(el=>ID[el.dataset.i18nHref]=el.href);
+const store={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+const langBtn=document.getElementById('langBtn');
+function setLang(l){
+  const d=l==='en'?EN:ID;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const v=d[el.dataset.i18n];if(v)el.textContent=v});
+  document.querySelectorAll('[data-i18n-html]').forEach(el=>{const v=d[el.dataset.i18nHtml];if(v)el.innerHTML=v});
+  document.querySelectorAll('[data-i18n-alt]').forEach(el=>{const v=d[el.dataset.i18nAlt];if(v)el.alt=v});
+  document.querySelectorAll('[data-i18n-href]').forEach(el=>{const v=d[el.dataset.i18nHref];if(v)el.href=v});
+  document.documentElement.lang=l;
+  langBtn.textContent=l==='en'?'ID':'EN';
+  langBtn.setAttribute('aria-label',l==='en'?'Ganti bahasa ke Bahasa Indonesia':'Switch language to English');
+  store.set('lang',l);
+}
+if(store.get('lang')==='en')setLang('en');
+langBtn.addEventListener('click',()=>setLang(document.documentElement.lang==='en'?'id':'en'));
+
+const root=document.documentElement,themeBtn=document.getElementById('themeBtn');
+const savedTheme=store.get('theme');if(savedTheme)root.dataset.theme=savedTheme;
+themeBtn.addEventListener('click',()=>{
+  const dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+  root.dataset.theme=dark?'light':'dark';store.set('theme',root.dataset.theme);
+});
+
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>8),{passive:true});
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)});
+
+// self-check: every English key must exist in the Indonesian markup, or the toggle silently skips it
+const missing=Object.keys(EN).filter(k=>!(k in ID));
+console.assert(!missing.length,'i18n keys missing in HTML:',missing);
+</script>
+</body>
+</html>
