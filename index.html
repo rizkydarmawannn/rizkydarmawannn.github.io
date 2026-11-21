@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,11 +27,6 @@
   --max:1160px; --r:16px;
   --serif:"Fraunces",Georgia,serif; --sans:"Inter",system-ui,-apple-system,sans-serif;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0a110c; --surface:#111a14; --surface-2:#16211a; --ink:#ecf3ea; --ink-soft:#a9b8ad; --muted:#8a998e;
-  --line:#223027; --brand:#86efac; --brand-ink:#05200f; --accent:#86efac;
-  --band:#0d1f14; --band-2:#14301f; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.25);
-}}
 :root[data-theme="dark"]{
   --bg:#0a110c; --surface:#111a14; --surface-2:#16211a; --ink:#ecf3ea; --ink-soft:#a9b8ad; --muted:#8a998e;
   --line:#223027; --brand:#86efac; --brand-ink:#05200f; --accent:#86efac;
@@ -545,8 +540,7 @@ langBtn.addEventListener('click',()=>setLang(document.documentElement.lang==='en
 const root=document.documentElement,themeBtn=document.getElementById('themeBtn');
 const savedTheme=store.get('theme');if(savedTheme)root.dataset.theme=savedTheme;
 themeBtn.addEventListener('click',()=>{
-  const dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
-  root.dataset.theme=dark?'light':'dark';store.set('theme',root.dataset.theme);
+  root.dataset.theme=root.dataset.theme==='dark'?'light':'dark';store.set('theme',root.dataset.theme);
 });
 
 const nav=document.getElementById('nav');
