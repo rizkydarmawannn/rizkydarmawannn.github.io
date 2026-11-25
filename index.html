@@ -1,17 +1,22 @@
 <!doctype html>
-<html lang="id" data-theme="light">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rizky Darmawan — Digital Marketing Strategist</title>
-<meta name="description" content="Rizky Darmawan, digital marketing strategist sejak 2012: strategi kampanye, iklan Meta & Google, CRM Odoo, dan otomasi n8n untuk bisnis B2B, B2C, dan e-commerce.">
-<meta property="og:title" content="Rizky Darmawan — Digital Marketing Strategist">
-<meta property="og:description" content="Strategi digital marketing yang terhubung dengan proses penjualan: iklan, CRM, dan otomasi.">
-<meta property="og:image" content="https://rizkydarmawannn.github.io/assets/rizky.webp">
-<meta property="og:url" content="https://rizkydarmawannn.github.io/">
-<link rel="canonical" href="https://rizkydarmawannn.github.io/">
-<meta property="og:locale" content="id_ID">
-<meta property="og:locale:alternate" content="en_US">
+<title>Rizky Darmawan — Digital Marketing Strategist | Meta &amp; Google Ads</title>
+<meta name="description" content="Digital Marketing Strategist since 2012. I help businesses turn Meta &amp; Google Ads into measurable sales with CRM, automation, and follow-up systems.">
+<meta name="keywords" content="digital marketing strategist, Meta Ads, Google Ads, lead generation, CRM, marketing automation, n8n, SEO, link building, e-commerce optimization, Shopee, TikTok Shop, digital marketing consultant Indonesia">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rizky Darmawan — Digital Marketing Strategist | Meta &amp; Google Ads">
+<meta property="og:description" content="Digital marketing strategy, connected to your sales process: ads, CRM, and automation — so every prospect is recorded, followed up, and measured.">
+<meta property="og:image" content="https://rizkydarmawan.web.id/assets/rizky.webp">
+<meta property="og:url" content="https://rizkydarmawan.web.id/">
+<link rel="canonical" href="https://rizkydarmawan.web.id/">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rizky Darmawan — Digital Marketing Strategist | Meta &amp; Google Ads">
+<meta name="twitter:description" content="Digital Marketing Strategist since 2012. I help businesses turn Meta &amp; Google Ads into measurable sales with CRM, automation, and follow-up systems.">
 <meta name="theme-color" content="#0f2e1c">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314532d'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia' font-weight='700' font-size='28' fill='%23ffffff'%3ERD%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -472,7 +477,7 @@ footer a:hover{color:var(--ink)}
 
 <script>
 document.body.classList.remove('no-js');
-// Indonesian lives in the HTML (primary, for SEO and no-JS); English is the alternate.
+// Indonesian lives in the HTML (no-JS fallback); English is the default unless the visitor previously chose Indonesian.
 const EN={
  "skip":"Skip to content","nav.system":"How it works","nav.services":"Services","nav.industries":"Experience","nav.about":"About","nav.cta":"Book a consultation",
  "hero.eyebrow":"Digital Marketing Strategist · Since 2012",
@@ -534,7 +539,7 @@ function setLang(l){
   langBtn.setAttribute('aria-label',l==='en'?'Ganti bahasa ke Bahasa Indonesia':'Switch language to English');
   store.set('lang',l);
 }
-if(store.get('lang')==='en')setLang('en');
+if(store.get('lang')!=='id')setLang('en');
 langBtn.addEventListener('click',()=>setLang(document.documentElement.lang==='en'?'id':'en'));
 
 const root=document.documentElement,themeBtn=document.getElementById('themeBtn');
